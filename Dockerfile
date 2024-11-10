@@ -8,7 +8,7 @@ WORKDIR /app
 COPY telegram_bot_kabanello.py .
 
 # Установка зависимостей
-RUN pip install python-telegram-bot
+RUN pip install python-telegram-bot pytz
 
 #Запуск бота
 CMD ["python", "telegram_bot_kabanello.py"]
